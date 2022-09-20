@@ -1,0 +1,26 @@
+package com.Q1;
+
+public class DeadLock {
+		
+	public static Object l1= new Object();
+	public static Object l2= new Object();
+	private int i;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Thread t1= new Thread1();
+		Thread t2= new Thread2();
+		
+		t1.start();
+		t2.start();
+	}
+	
+	private class Thread1 extends Thread{
+		
+	}
+	
+	private class Thread2 extends Thread{
+		
+	}
+
+}

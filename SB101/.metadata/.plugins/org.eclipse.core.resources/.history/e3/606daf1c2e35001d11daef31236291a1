@@ -1,0 +1,11 @@
+package com.Q1;
+
+public class AnimalException {
+	public AnimalException (){
+		
+	}
+	
+	public AnimalException (String message) {
+		super(message);
+	}
+}

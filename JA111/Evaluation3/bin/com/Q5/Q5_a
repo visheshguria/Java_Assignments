@@ -1,0 +1,21 @@
+a) Does the below code compile successfully? If not, why?
+interface A{
+int i = 111;
+}
+class B implements A{
+void methodB(){
+i = 222;
+}
+}
+
+
+
+Answer: No, the above code will not compile successfully because in the interface, the members and member functions have only the declaration.
+		we cannot assign the values to them. They are defined in the classes which implement the interface. We cannot create the object of
+		inteface also. So the above code will give the compilation error because the "i" is defined as final in the interface. Because in 
+		interface, the fields ( variables) are defined as "final" and methods are defined as "abstract". 
+				So, here, the variable "i" is defined as final in the interface who's value cannot be changed. So we cannot assign another value
+				to the variable "i" if the interface have field "i" and it is implemented in the class. We cannot change the value of field.
+				
+				
+				** interface have all the fields are automatically final. 

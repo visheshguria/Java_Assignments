@@ -1,0 +1,58 @@
+package com.Q1;
+
+public class DeadLock {
+		
+	public static Object l1= new Object();
+	public static Object l2= new Object();
+	private int i;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Thread t1= new Thread1();
+		Thread t2= new Thread2();
+		
+		t1.start();
+		t2.start();
+	}
+	
+	private class Thread1 extends Thread{
+		public void run() {
+			synchronized (l1) {
+				System.out.println("Thread1 have the lock1");
+				try {
+					Thread.sleep(1000);
+				}
+				catch (InterruptedException e) {
+					// TODO: handle exception
+					System.out.println("Thread 1 waiting for lock 2");
+					synchronized (l2) {
+						System.out.println("Thread2 have lock 1 and 2");	
+					}
+					
+				}
+			}
+		}
+	}
+	
+	
+	private class Thread2 extends Thread{
+		public void run() {
+			synchronized (l2) {
+				System.out.println("Thread1 have the lock2");
+				try {
+					Thread.sleep(1000);
+				}
+				catch (InterruptedException e) {
+					// TODO: handle exception
+					System.out.println("Thread 1 waiting for lock 1");
+					synchronized (l2) {
+						System.out.println("Thread2 have lock 1 and 2");	
+					}
+					
+				}
+			}
+		}
+	}
+	
+
+}

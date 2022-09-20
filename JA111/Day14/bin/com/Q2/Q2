@@ -1,0 +1,32 @@
+Q2) What is the difference between ArrayList and Array?
+
+Answer :- 
+
+
+Array :
+
+
+1. An array can store primitive data as well as objects, but it cannot store generics.
+
+2. It is not type-safe.
+
+3. Arrays are static
+
+4. 	Arrays are faster.
+
+5. The additions are done with the assignment operator.
+
+
+ArrayList :
+
+
+
+1. ArrayList is able to store generics as well as objects, but it cannot store data of primitive types.
+
+2. It is type-safe.
+
+3. ArrayList is dynamic.
+
+4. ArrayList is slower.
+
+5. ArrayList uses add() method for performing additions.

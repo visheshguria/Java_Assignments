@@ -1,0 +1,27 @@
+Q3) Define Wrapper Classes in Java.
+Answer3:
+	A Wrapper class is a class whose object wraps or contains primitive data types. 
+	When we create an object to a wrapper class, it contains a field and in this field,	 
+	we can store primitive data types.
+	In other words, we can wrap a primitive value into a wrapper class object.
+	
+Q4) Explain why the following block of code will give a compile time error?
+	public class Main {
+	public static void main(String[] args) {
+	float f=3.3;
+	System.out.println(f);
+	}
+	}
+	Also rectify this code.
+	
+Answer4: 
+		This block of code will give compile error because the variable f is defined as float. 
+		In java the real numbers are defined as double, but in this code the f(variable) is defined as
+		float. So to rectify this code, following code is better: 
+			
+			public class Main {
+			public static void main(String[] args) {
+			float f=3.3f;
+			System.out.println(f);
+			}
+			}

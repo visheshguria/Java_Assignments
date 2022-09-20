@@ -1,0 +1,17 @@
+package com.Q1;
+
+import java.util.function.Function;
+
+public class FunctionImpl implements Function <Student, String> {
+
+
+	@Override
+	public String apply(Student t) {
+		// TODO Auto-generated method stub
+		if(t.name=="vishesh") {
+			return "FunctionDone";
+		}
+		return "FunctionNotDone";
+	}
+
+}

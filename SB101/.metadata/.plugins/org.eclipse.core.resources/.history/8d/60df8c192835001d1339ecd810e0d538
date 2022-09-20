@@ -1,0 +1,16 @@
+package com.Q1;
+
+import java.util.function.Consumer;
+
+public class Predicate implements Consumer<Student> {
+
+	public boolean accept (Student t) {
+
+		if(t.name=="Vishesh") {
+			return true;
+		}
+		return false;
+	}
+
+
+}

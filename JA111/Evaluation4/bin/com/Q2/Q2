@@ -1,0 +1,32 @@
+Q2) Explain about Hashcode and Equals Method.
+
+Answer:  
+	Hashcode method: java hashcode () method is a native method and returns the integer hash code value of the object.
+					
+					We can say that the value returned by the hashcode() method is the object's hashcode, which is the
+					
+					object's memory address in hexadecimal.
+					
+			    Contract of hashCode() method is : 
+					
+					1. An object hashcode value can change in multiple executions of the same application.
+	
+					2. if two methods are equal according to equals() method, then the hashcode must be the same.
+	
+	
+	
+	
+	Equals method : The equals method go for the comparison of two object refrences. If two objects are equal then
+					
+					hashCode must be the same. But vice-versa is not applicable.
+					
+					In other words , When we want to compare two objects based on some logic, we need to override the 
+					
+					equals() method in that object. So, the equals() compare two entities and returns true if they are
+					
+					logically same.  
+					
+					
+					1. if we want to override the equals() method, then we will also need to override() the hashCode method.
+					
+					2. if two methods are equal according to equals() method, then the hashcode must be the same.

@@ -1,0 +1,18 @@
+package com.Q1;
+
+public class Test {
+		public synchronized void functionTest(B b1) {
+			System.out.println("inside Test function");
+			b1.functionB();
+			System.out.println("functionTest ends");
+		}
+}
+
+public class B{
+
+	public synchronized void functionB(Test a1) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

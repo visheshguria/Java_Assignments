@@ -1,0 +1,13 @@
+Q1) Differentiate between static and non-static variables?
+
+Answer: Static variables are those variables which are loaded into the context area of the 
+		memory when the program is compiled. The static variables have "static" keyword 
+		before the variable name. The static variables can be called directly without any 
+		object because they are loaded into the memory at compile time. 
+		
+		
+		Non-static variables are those variables which are not loaded into the memory 
+		automatically. These variables are needed to be explicitly loaded into the memory 
+		with the help of instances(object) of the class. Whenever the object of the class is 
+		created, the non-static variables automatically loaded into the memory and wait for 
+		their execution. They do not start with any keyword, but the variable name. 

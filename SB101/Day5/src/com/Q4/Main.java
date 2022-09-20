@@ -1,0 +1,23 @@
+package com.Q4;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		PrintList pl= List->{
+			for(String el: List) {
+				System.out.println(el);
+			}
+		};
+		
+		List lst= Arrays.asList("chd","pub","har","mum","del","pune");
+	
+		pl.display(lst);
+	
+	
+	}
+	
+}

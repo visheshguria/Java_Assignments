@@ -1,0 +1,13 @@
+package com.Q2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		A obj= new A();
+		
+		Thread t1= new Thread(obj);
+		t1.start();
+	}
+
+}

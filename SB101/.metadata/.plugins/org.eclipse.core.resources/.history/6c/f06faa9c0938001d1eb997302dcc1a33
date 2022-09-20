@@ -1,0 +1,9 @@
+package com.Q5;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
+public class Demo1 {
+		
+	ObjectOutputStream oo = new ObjectOutputStream(new FileOutputStream("c://students.txt"));
+}

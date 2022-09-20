@@ -1,0 +1,18 @@
+package com.Q1;
+
+public class Tiger extends Animal{
+	
+	@Override
+	public void eat() {
+		
+	}
+	
+	
+	public static void main(String[] args) throws AnimalException {
+		// TODO Auto-generated method stub
+		Animal obj= new Tiger();
+		
+		obj.eat();
+	}
+
+}

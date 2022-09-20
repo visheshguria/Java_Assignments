@@ -1,0 +1,12 @@
+Q1) What do you mean by Multithreading? Why is it important?
+
+Answer: Multithreading is a conceptual programming paradigm where a program is divided into two or more subprograms.
+		which can be implemented at the same time in parallel. Each subprogram of such a program is called a 
+		thread and each thread performs a seprate task. 
+		
+		** Due to following reasons, multithreading is important. 
+		1. Improved throughput. Many concurrent compute operations and I/O requests within a single process.
+		2. Simultaneous and fully symmetric use of multiple processors for computation and I/O.
+		3. Minimized system resource usage. Threads impose minimal impact on system resources. Threads require less overhead to create, maintain, and manage than a traditional process.
+
+		

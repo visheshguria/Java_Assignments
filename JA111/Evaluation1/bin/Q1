@@ -1,0 +1,18 @@
+Q1) Explain why Java is platform independent ?
+
+Answer: The Java is known as a high level programming language which is very flexible and platform independent.
+		The Java is platform independent language because it uses the JVM ( Java Virtual Machine).
+		And all the compilations are done into the bytecode. That bytecode is platform independent. 
+				In Simple words, JVM is different on different platforms (platform dependent) and 
+		it takes care of the bytecode created on different platforms. 
+		
+		1. When we write a java program, the javac ( compiler) compiles it. And creates a 
+			.class file which is known as bytecode. This bytecode can be used on any of the 
+			platforms. 
+		2. Different platforms have their JVM. JVM executes the bytecode according to the  
+			platform in which it is installed. JVM is platform dependent. 	
+			
+			
+	This is how the java is platform independent language. 
+				
+				

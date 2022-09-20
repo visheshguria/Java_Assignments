@@ -1,0 +1,143 @@
+	Q1/- Explain the meaning of the deadlock in multithreaded application, when it can occur in
+		 multithreading applications.Write one example of deadlock.
+		 
+	Answer: The deadlock is a situation in multithreaded application where two or more threads are in the blocked
+			state and are waiting for each other to. In other words whenever two threads are in blocked state or hung
+			forever and are waiting for each other to execute or to reach to runnable state, but nither of them goes to 
+			the runnable state. Then this is called a situation of deadlock.
+			
+				Usually deadlock occures when multiple threads need the same locks but obtain them in different order. 
+				Or two threads are dependent on each other to execute. But they are in blocked state forever. 
+				This happens due to the "Synchronized" keyword. 
+												The "synchronized" keyword is used to make the class or method thread
+				safe. It means that only one thread can have the lock for the synchronized method and use it, and the other 
+				threads have to wait for it to get completely executed, or the release of the lock. 
+				
+				
+			Example: 
+							
+			  package com.Q1;
+
+public class DeadLock {
+		
+	public static Object l1= new Object();
+	public static Object l2= new Object();
+	private int i;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Thread t1= new Thread1();
+		Thread t2= new Thread2();
+		
+		t1.start();
+		t2.start();
+	}
+	
+	private class Thread1 extends Thread{
+		public void run() {
+			synchronized (l1) {
+				System.out.println("Thread1 have the lock1");
+				try {
+					Thread.sleep(1000);
+				}
+				catch (InterruptedException e) {
+					// TODO: handle exception
+					System.out.println("Thread 1 waiting for lock 2");
+					synchronized (l2) {
+						System.out.println("Thread2 have lock 1 and 2");	
+					}
+					
+				}
+			}
+		}
+	}
+	
+	
+	private class Thread2 extends Thread{
+		public void run() {
+			synchronized (l2) {
+				System.out.println("Thread1 have the lock2");
+				try {
+					Thread.sleep(1000);
+				}
+				catch (InterruptedException e) {
+					// TODO: handle exception
+					System.out.println("Thread 1 waiting for lock 1");
+					synchronized (l2) {
+						System.out.println("Thread2 have lock 1 and 2");	
+					}
+					
+				}
+			}
+		}
+	}
+	
+
+}
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+											
+					 

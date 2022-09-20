@@ -1,0 +1,31 @@
+package com.Q3;
+
+import java.util.concurrent.Callable;
+import java.util.concurrent.ConcurrentHashMap;
+
+public class Call implements Callable<Long> {
+	long n;
+	
+	
+	
+	public Call(long n) {
+		super();
+		this.n = n;
+	}
+
+
+
+	@Override
+	public Long call() throws Exception {
+		// TODO Auto-generated method stub
+		synchronized (this) {
+			long res=1;
+			for(int i=1;i<=n;i++) {
+				res*=i;
+			}
+			System.out.println("In the"+ Thread.currentThread().getName());
+			return res;
+		}
+	}
+
+}

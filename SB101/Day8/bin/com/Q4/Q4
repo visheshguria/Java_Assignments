@@ -1,0 +1,21 @@
+Q4) What are the different states of a thread, or what is thread lifecycle?
+
+Answer: A thread state. A thread can be in one of the following states:
+	
+	NEWBORN State
+	A thread that has not yet started is in this state.
+	
+	RUNNABLE State
+	A thread that is ready to run is in this state.
+	
+	RUNNING State
+	A thread that is that is executing is in this state.
+	
+	BLOCKED State
+	Whenever a thread is inactive for a span of time then, either the thread is in the blocked state or is in the waiting state.
+	
+	TIMED_WAITING
+	A thread that is waiting for another thread to perform an action for up to a specified waiting time is in this state.
+	
+	DEAD State:
+	A thread that has exited is in this state.

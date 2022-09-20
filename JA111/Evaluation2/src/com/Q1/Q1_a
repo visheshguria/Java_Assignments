@@ -1,0 +1,80 @@
+a) Why String is immutable in java and what is the difference between 
+String and String Builder?
+And Write some of the methods of String class at least 5 with example.
+
+
+Answer1: a)  The meaning of String immutable is that we cannot change
+		 the object itself. but we can change the refrences to the object.
+		 This is done because of security reasons. The string is made final
+		 using the "final" keyword so that it cannot be changed by others
+		 to destroy its immutability.
+		 
+		 ***************
+		 
+		 what is the difference between String and String Builder?
+		 
+		 Answer: 
+		 **String is immutable but String Builder is mutable in java. 
+		 We can use equals() method for comparing two strings.
+		 ** The string class overrides the equals()method. But StringBuilder
+		 	does not overrides the equals() method.
+		 	
+		 ** The length of String is fixed because it is immutable but the
+		 	length of StringBuilder is not fixed. 
+		 	
+		*****************
+		methods of String class 
+		
+		1. concat(): used to concatinate two strings.
+			eg: String joinString = firstString.concat(secondString);
+			
+		2. length(): used to get the length of the string.
+			eg: int len= stringName.length();  // len will be integer	 
+		
+		3. equals(): used to compare the contents of two strings.
+			eg. boolean result= stringOne.equals(stringTwo);
+			
+		4. contains(): checks whether string contains a substring
+			eg. boolean result= stringOne.contains("substring2find");
+		
+		5. trim(): used to trim (remove) the white spaces 
+		
+*************************************************************************
+b) 	What is the difference between equals method and == operator in java? And what will be the output of the
+following code snippets and giving proper explanation.
+
+snippet 1: 
+			String s1 = new String("abc");	
+			String s2 = new String("abc");
+			System.out.println(s1.equals(s2)); 
+			
+snippet 2: 
+			StringBuilder sb1 = new StringBuilder("abc");
+			StringBuilder sb2 = new StringBuilder("abc");
+			System.out.println(sb1.equals(sb2)); 
+	
+snippet 3: 
+			String s1 = new String("abc");
+			String s2 = new String("abc");
+			System.out.println(s1==s2);					
+			
+			
+			
+Answer: *The main difference between equals() and ==  is that equals is a method 
+		   but the == is operator.
+		*we can use == operators for refrence comparison. But the equals() is used
+		   for content comparison.
+		* == checks whether two objects points to same memory location
+			equals() compare only the values 
+			
+
+	Snippet 1 and Snippet 2 both have the output "true"	 because both 
+	are using the equals() method. So the equals method only checks the content
+	which we are comparing. 
+	
+	snippet 3 will have the output "false" because we are using the == operator
+	and == operator checks if the objects are pointing to same memory location or not.
+	here, in snippet 3, S1 is pointing to one memory location and S2 is pointing to 
+	another. So the output is "false"					
+				
+			

@@ -1,0 +1,90 @@
+Question 2:
+Briefly explain the difference between Early and Late Binding with examples.
+
+Answer: 
+	Early Binding: The binding which can be resolved at compile time by the compiler is known as early binding. 
+					Binding of all the static , private and the final methods is done at the compile time.
+					Early binding is performance wise better. Compiler knows that all such methods cannot be overridden and will always
+					be accessed by object of local class. 
+					
+					
+					example:
+						
+						public class Main(){
+						
+							
+							public static class Parent{
+								
+								static void f1(){
+								System.out.println(" Parent class");
+								}
+							}
+							
+							public static class Child extends Parent{
+								
+								static void f1(){
+								System.out.println(" Child class");
+								
+								}
+							}
+							
+							public static void main(String[] args){
+								
+								Parent obj1= new Parent();
+								
+								Parent obj2= new Child();
+								
+								obj1.f1();
+								obj2.f1();
+							}				
+						
+						}
+						
+						output: Parent class
+								Parent class
+						
+	
+	Late Binding: In late binding the compiler does not decide the method to be called. Overriding is a perfect example of Late Binding.
+	
+			Example: 
+			
+					public class Main(){
+						
+							
+							public static class Parent{
+								
+								static void f1(){
+								System.out.println(" Parent class");
+								}
+							}
+							
+							public static class Child extends Parent{
+								
+								
+								@Override
+								static void f1(){
+								System.out.println(" Child class");
+								
+								}
+							}
+							
+						
+							public static void main(String[] args){
+								
+								Parent obj1= new Parent();
+								
+								Parent obj2= new Child();
+								
+								obj1.f1();
+								obj2.f1();
+							}				
+						
+						}
+						
+						output: Parent class
+								Child class
+								
+								
+the overridden method is called in late binding. 
+	
+	

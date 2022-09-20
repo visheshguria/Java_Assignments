@@ -1,0 +1,8 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="com.Q1.Car"><rhs name\="com.Q1.HatchBack"/><rhs name\="com.Q1.Sedan"/></lhs><lhs name\="com.Q1.HatchBack"><rhs name\="com.Q1.HatchBack"/></lhs><lhs name\="com.Q1.Sedan"><rhs name\="com.Q1.Sedan"/></lhs><lhs name\="com.Q5.Vehicle"><rhs name\="com.Q5.ElectricCar"/></lhs><lhs name\="com.Q5.ElectricCar"><rhs name\="com.Q5.ElectricCar"/></lhs><lhs name\="java.util.Comparator"><rhs name\="com.Q1.Compare"/></lhs></history>
+content_assist_number_of_computers=15
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.formatterprofiles.version=22
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

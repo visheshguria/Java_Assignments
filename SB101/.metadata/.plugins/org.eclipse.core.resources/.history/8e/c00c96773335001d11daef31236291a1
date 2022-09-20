@@ -1,0 +1,29 @@
+package com.Q5;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			
+		List<Product> lst= new Arrays.asList(
+				new Product(1, "p1", 5, 400),
+				new Product(3, "p3", 10, 800),
+				new Product(4, "p4", 15, 100),
+				new Product(5, "p5", 13, 600),
+				new Product(6, "p6", 30, 700)
+
+				
+				
+				
+				
+				
+				);
+				
+				
+				
+	}
+
+}

@@ -1,0 +1,31 @@
+package com.Q4;
+
+public class Main extends Thread{
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+			
+			
+			Dhoni d= new Dhoni();
+			d.setName("Dhoni");
+			d.setPriority(MAX_PRIORITY);
+			
+			Kohli k= new Kohli();
+			k.setName("Kohli");
+//			k.setPriority(7);
+			
+			Rohit r= new Rohit();
+			r.setName("Rohit");
+			r.setPriority(8);
+		
+			
+			d.start();	
+			
+			Thread.sleep(100);
+			r.start();
+			
+			Thread.sleep(400);
+			k.start();
+		
+	}
+
+}

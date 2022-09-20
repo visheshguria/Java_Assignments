@@ -1,0 +1,30 @@
+package com.Q2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub	
+		A t1= new A();
+		t1.start();
+		
+		synchronized (t1) {
+			
+			
+			try {
+				System.out.println("waiting thread");
+				t1.wait();
+				System.out.println("notify");
+				t1.notify();
+			    }
+			
+			catch (InterruptedException ex)
+				{
+				ex.printStackTrace();
+				}
+			
+
+		}
+		System.out.println("the product is "+ t1.product);	
+	}
+
+}

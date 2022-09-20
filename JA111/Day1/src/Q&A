@@ -1,0 +1,27 @@
+Q1) Write the difference between JRE, JDK and JVM?
+Answer1: 
+    1.JDK is primarily used for code execution and has prime functionality of development.
+	2.On other hand JRE is majorly responsible for creating environment for code execution.
+	3.JVM on other hand specifies all the implementations and responsible to provide these implementations.
+
+Q2) Write the difference between JSE, JEE and JME?
+Answer2:
+	1.JSE − Java Standard Edition using this, you can develop stand-alone applications. 
+	2.JEE − Java Enterprise Edition using this, you can develop Enterprise applications.
+	3.JME − Java Micro Edition using this, you can develop applications that run on small scale devices like mobile phones.
+
+Q3) How does java achieve platform independency?
+Answer3: 
+	java achieve the platform independency by using the byte code. Whenever a java code is written, then after compilation a .class file is created.
+	That .class file is known as bytecode and this file is platform independent. The JVM and compiler are platform dependent but .class file(bytecode)is
+	platform independent. We can run this code in any OS. 
+
+Q4) What are features of Java and explain them?
+Answer4:
+	Following are some features of java.
+	1. Robust
+	2. Platform independent.
+	3. Simple
+	4. Object Oriented language.
+	5. Secure.
+	6. Portable.

@@ -1,0 +1,20 @@
+Q2) What are the benefits of using Multithreading?
+
+Answer: There are several benefits of multithreading.
+		
+		1. Responsiveness –
+			Multithreading in an interactive application may allow a program to continue running even if 
+			a part of it is blocked or is performing a lengthy operation, thereby increasing responsiveness 
+			to the user.
+			
+		2. it is invented to avoid Idle states of the cpu.
+		
+		3. Make the function get executed independetly.
+		
+		4.Scalability –
+		The benefits of multi-programming greatly increase in case of multiprocessor architecture, 
+		where threads may be running parallel on multiple processors. If there is only one thread 
+		then it is not possible to divide the processes into smaller tasks that different processors 
+		can perform.
+		
+		

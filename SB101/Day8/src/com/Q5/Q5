@@ -1,0 +1,54 @@
+Q5) Differentiate between the Thread class and Runnable interface for creating a Thread?
+
+Ans-->  
+    A thread can programmatically be created by:
+       1.Implementing the java.lang.Runnable interface.
+       2.Extending the java.lang.Thread class.     
+-----------------------------------------------------------------
+
+  Thread Class:
+        The Thread class provides constructors and methods for creating and operating on threads. The thread extends the Objectand implements the Runnable interface.
+ 
+Example-->
+       
+   import java.io.*;
+   class Demo extends Thread {
+	public void run()
+	{
+		System.out.print("Welcome to masai school.");
+	}
+	public static void main(String[] args)
+	{
+		Demo g = new Demo(); // creating thread
+		g.start(); // starting thread
+	}
+  }
+
+----------------------------------------------------------------------------------------------------
+
+   Runnable interface:
+        Any class with instances that are intended to be executed by a thread should implement the Runnable interface. The Runnable interface has only one method, 
+            which is called run().
+Example-->
+     
+      import java.io.*;
+  class Demo implements Runnable {
+	public static void main(String args[])
+	{
+		// create an object of Runnable target
+		Demo demo = new Demo();
+
+		// pass the runnable reference to Thread
+		Thread t = new Thread(demo, "demo");
+
+		// start the thread
+		t.start();
+
+		// get the name of the thread
+		System.out.println(t.getName());
+	}
+	@Override public void run()
+	{
+		System.out.println("Inside run method");
+	}
+}

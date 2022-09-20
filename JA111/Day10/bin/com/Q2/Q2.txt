@@ -1,0 +1,56 @@
+Q What is the use of ‘this’ and ‘super’ keywords in java ? Explain with an example.
+
+Answer :-
+
+In java, super keyword is used to access methods of the parent class while this is used to access methods of the current class.
+
+this keyword is a reserved keyword in java i.e, we can’t use it as an identifier. It is used to refer current class’s instance as well as static members. 
+
+Example :- this  
+
+class A{
+	A getA(){
+		// returing the instance of current class
+		return this;
+	}
+	
+	void print(){
+		System.out.println("Hello This is Vishesh!");
+	}
+}
+public class Main {
+    public static void main(String[] args) {
+    	new A().getA().print();
+  
+    }
+}
+
+Output :- Hello This is Vishesh!
+
+
+
+Example :- super 
+
+
+class Animal{  
+   Animal(){
+       System.out.println("animal is created");
+   }  
+}
+
+class Dog extends Animal{  
+     Dog(){  
+	super();  
+	System.out.println("dog is created");  
+	}  
+}  
+class TestSuper3{  
+public static void main(String args[]){  
+Dog d=new Dog();  
+}}  
+
+
+Output :- 
+animal is created
+dog is created
+

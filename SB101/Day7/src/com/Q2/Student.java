@@ -1,0 +1,46 @@
+package com.Q2;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+
+
+public class Student {
+	
+	int roll;
+	String name;
+
+	double marks;
+	Student(){
+		
+	}
+	public Student(int roll, String name,  double marks) {
+		super();
+		this.roll = roll;
+		this.name = name;
+		
+		this.marks = marks;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [roll=" + roll + ", name=" + name + ", email=" +  ", marks=" + marks + "]";
+
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Student> s=Arrays.asList(
+				new Student(1,"vishesh",500),
+				new Student(2,"raghav",600),
+				new Student(3,"sanyam",400),
+				new Student(4,"tanuj",900),
+				new Student(5,"atul",500));
+				
+				Optional<Student> st=s.stream().max((o1,o2)->o1.marks>o2.marks?1:-1);
+				System.out.println(st);
+
+		}
+
+	}
+
+

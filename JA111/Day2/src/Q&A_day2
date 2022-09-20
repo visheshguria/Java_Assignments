@@ -1,0 +1,12 @@
+Q1) Explain Type casting and its types with examples?
+Answer1: 
+		Convert a value from one data type to another data type is known as type casting.
+		Conversion of one data type to another:
+			eg. int to float
+				or float to double etc
+				
+Q3) Explain the difference between local and instance variables?
+Answer3: 
+		An instance variable is a variable that is declared in a class but outside a method,
+		while the local variable is a variable declared within a method or a constructor.
+		Thus, this is the main difference between instance variable and local variable.

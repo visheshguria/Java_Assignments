@@ -1,0 +1,24 @@
+Q1)  Is there any difference between creating a string with and without a new operator?  
+        Explain with an example.
+
+Answer:- Example: 
+String strObject = new String("Java");
+
+and 
+
+String strLiteral="Java";
+
+Both expressions give you a String object, but there is a subtle difference between them. 
+
+When you create a String object using the new() operator, it always creates a new object in heap memory.
+ 
+On the other hand, if you create an object using String literal syntax e.g. "Java",
+it may return an existing object from String pool, if it already exists. 
+Otherwise, it will create a new string object and put it in a string pool for future re-use.
+
+In other words, When we create a string using the "new" operator,
+It will create the string object in the memory even if other string object exists,
+But string literal (creating a string without new keyword) will check in the string pool if the string object exist or not. 
+
+if exists then it will return the existing object otherwise it will create the object in the stringpool.
+We can use it later. 

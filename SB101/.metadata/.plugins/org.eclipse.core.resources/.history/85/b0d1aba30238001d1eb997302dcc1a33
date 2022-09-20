@@ -1,0 +1,14 @@
+package com.Q3;
+
+public class Dhoni extends Thread {
+		
+	@Override
+	public void run() {
+		int ans=0;
+		
+		for(int i=1;i<=20;i++) {
+			ans+=i;
+		}
+		System.out.println("The Addition done by Dhoni is: " + ans);
+	}
+}

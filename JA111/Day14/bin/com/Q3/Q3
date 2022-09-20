@@ -1,0 +1,24 @@
+Q3) Explain AutoBoxing and Auto UnBoxing with Examples.
+
+Answer :-
+
+AutoBoxing :--
+
+AutoBoxing is the automatic conversion that the Java compiler makes between the primitive types and their 
+
+corresponding object wrapper classes. 
+
+
+Example :- converting an int to an Integer, a double to a Double, etc.
+
+
+
+
+Auto UnBoxing :--
+
+Auto Unboxing in Java is an automatic conversion of an object of a wrapper class to the value of its respective primitive data type by the compiler.
+
+It is the opposite technique of AutoBoxing. 
+
+
+Example :-  converting  Integer class to int dataType, converting Double class into double data type, etc.

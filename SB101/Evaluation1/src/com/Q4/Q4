@@ -1,0 +1,32 @@
+Question 4: What will be the output of below code and why?
+		public class CheckOutput {
+		public static void main(String args[])
+		
+		{
+		try
+		{
+		System.out.print("A");
+		int num = 99/0;
+		System.out.print("B");
+		}
+		catch(ArithmeticException ex)
+		{
+		System.out.print("C");
+		}
+		catch(Exception ex)
+		{
+		System.out.print("D");
+		}
+		System.out.print("E");
+		}
+		}
+
+Answer: 
+		
+		The above code will run the try block where "A" will get printed. Then the control will shift 
+		to the next line. There 99/0 is present which is an Arithmatic Exception. So the control will not
+		go furthur in the try block. It will look for the catch statement where Arithmatic Exception is
+		getting handled. Then it will print "C". Now, the exception is handled , then the control will print
+		the remaining lines without the catch block i.e "E". So "E" will get printed at the end. 
+		
+		So the output of the program will be ACE.

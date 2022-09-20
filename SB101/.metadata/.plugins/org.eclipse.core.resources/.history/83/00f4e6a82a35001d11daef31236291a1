@@ -1,0 +1,16 @@
+package com.Q1;
+
+import java.util.function.Predicate;
+
+public class PredicateImpl implements Predicate<Student>{
+
+	@Override
+	public boolean test(Student t) {
+		// TODO Auto-generated method stub
+		if(t.name=="vishesh") {
+			return true;
+		}
+		return false;
+	}
+
+}

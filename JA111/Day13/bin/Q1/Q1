@@ -1,0 +1,17 @@
+Question 1:  Explain about the Marker interface?
+
+Answer :- An interface that has no member is known as a marker or tagged interface, 
+for example, Serializable  Cloneable, Remote, etc. They are used to provide some
+essential information to the JVM so that JVM may perform some useful operations.
+
+ 
+ In other words An interface that does not have any methods, fields, or constants, i.e,
+  an empty interface in java is known as Marker or Tag Interface. 
+  It is used to deliver type information at runtime to the JVM so that it can take some
+  action based on the information received.
+
+Example:-
+
+public interface Serializable{
+
+}
